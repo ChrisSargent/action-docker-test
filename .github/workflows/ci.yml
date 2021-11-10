@@ -37,6 +37,10 @@ jobs:
     # needs: docker
     container: ghcr.io/chrissargent/app:latest
     steps:
+      - name: Setup Repo
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
       - run: |
           ls -l
           echo "hello"
