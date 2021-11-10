@@ -42,6 +42,7 @@ jobs:
         with:
           fetch-depth: 0
       - run: |
+          pwd
           cdk --version
           ls -l
           cd /
