@@ -42,6 +42,7 @@ jobs:
         with:
           fetch-depth: 0
       - run: |
+          cdk --version
           ls -l
           echo "hello"
           yarn install
