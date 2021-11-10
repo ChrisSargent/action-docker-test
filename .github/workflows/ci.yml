@@ -35,7 +35,5 @@ jobs:
     runs-on: ubuntu-latest
     container: ghcr.io/chrissargent/app:latest
     steps:
-      - run: |
-          echo This job does specify a container.
-          echo It runs in the container instead of the VM.
+      - run: yarn start
         name: Run in container
