@@ -1,0 +1,15 @@
+{
+  "name": "action-docker-test",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/ChrisSargent/action-docker-test.git",
+  "author": "Chris Sargent <chris@noah.com>",
+  "license": "MIT",
+  "dependencies": {
+    "simple-node-logger": "^21.8.12"
+  },
+  "packageManager": "yarn@3.1.0",
+  "scripts": {
+    "start": "node src/hello-world.js"
+  }
+}
