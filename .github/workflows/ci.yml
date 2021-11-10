@@ -31,12 +31,6 @@ jobs:
           tags: ghcr.io/chrissargent/app:latest
           cache-from: type=gha
           cache-to: type=gha,mode=max
-      -
-        name: Upload artifact
-        uses: actions/upload-artifact@v2
-        with:
-          name: myimage
-          path: /tmp/myimage.tar
           
   incontainer:
     runs-on: ubuntu-latest
@@ -44,6 +38,5 @@ jobs:
     container: ghcr.io/chrissargent/app:latest
     steps:
       - run: |
-          docker run ghcr.io/chrissargent/app:latest
           yarn start
         name: Run in container
