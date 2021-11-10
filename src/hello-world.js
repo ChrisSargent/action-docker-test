@@ -5,7 +5,7 @@ const _ = require('lodash');
 
 function greet() {
   log.info("Hello Wonderful World!!!")
-  log.debug(_.capitalize("hello world"))
+  log.debug(_.capitalize("hello world!!!"))
 }
 
 greet()
