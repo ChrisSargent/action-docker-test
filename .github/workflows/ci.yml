@@ -39,5 +39,6 @@ jobs:
     steps:
       - run: |
           ls -l
-          yarn start
+          echo "hello"
+          yarn install
         name: Run in container
